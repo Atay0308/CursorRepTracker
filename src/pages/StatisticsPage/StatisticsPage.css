@@ -1,0 +1,249 @@
+/* ========================================
+   STATISTICS PAGE STYLES
+   ======================================== */
+
+/* Main page container */
+.statistics-page {
+  min-height: 100vh;
+  padding: var(--spacing-lg);
+  padding-bottom: 5rem; /* Space for bottom navigation */
+}
+
+/* Page header */
+.statistics-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.statistics-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-sm) 0;
+  background: linear-gradient(135deg, var(--primary-color), var(--success-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.statistics-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Main content area */
+.statistics-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+/* Section spacing */
+.statistics-section {
+  width: 100%;
+}
+
+/* Error display */
+.statistics-error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-card);
+  border: 1px solid var(--error-color);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  max-width: 400px;
+  width: 90%;
+}
+
+.statistics-error-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.statistics-error h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--error-color);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.statistics-error p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-md) 0;
+  line-height: 1.5;
+}
+
+.statistics-error-retry {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.statistics-error-retry:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.statistics-error-retry:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet: Adjust spacing and font sizes */
+@media (max-width: 768px) {
+  .statistics-page {
+    padding: var(--spacing-md);
+  }
+  
+  .statistics-header {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
+  }
+  
+  .statistics-title {
+    font-size: 2rem;
+  }
+  
+  .statistics-subtitle {
+    font-size: 1rem;
+  }
+  
+  .statistics-main {
+    gap: var(--spacing-lg);
+  }
+  
+  .statistics-error {
+    padding: var(--spacing-lg);
+    max-width: 350px;
+  }
+  
+  .statistics-error-icon {
+    font-size: 2.5rem;
+  }
+  
+  .statistics-error h3 {
+    font-size: 1.125rem;
+  }
+}
+
+/* Mobile: Compact layout */
+@media (max-width: 480px) {
+  .statistics-page {
+    padding: var(--spacing-sm);
+  }
+  
+  .statistics-header {
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+  }
+  
+  .statistics-title {
+    font-size: 1.75rem;
+  }
+  
+  .statistics-subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .statistics-main {
+    gap: var(--spacing-md);
+  }
+  
+  .statistics-error {
+    padding: var(--spacing-md);
+    max-width: 300px;
+  }
+  
+  .statistics-error-icon {
+    font-size: 2rem;
+  }
+  
+  .statistics-error h3 {
+    font-size: 1rem;
+  }
+  
+  .statistics-error p {
+    font-size: 0.8125rem;
+  }
+  
+  .statistics-error-retry {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.8125rem;
+  }
+}
+
+/* ========================================
+   LOADING STATES
+   ======================================== */
+
+/* Global loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.statistics-loading {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus states */
+.statistics-page *:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .statistics-title {
+    -webkit-text-fill-color: var(--text-primary);
+    color: var(--text-primary);
+  }
+  
+  .statistics-error {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .statistics-error-retry {
+    transition: none;
+  }
+  
+  .statistics-loading {
+    animation: none;
+  }
+}
+

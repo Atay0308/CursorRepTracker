@@ -1,0 +1,462 @@
+/* ========================================
+   ADD EXERCISE MODAL STYLES
+   ======================================== */
+
+/* Modal overlay - dark background */
+.add-exercise-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+/* Modal container */
+.add-exercise-modal {
+  background-color: var(--background-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+/* ========================================
+   MODAL HEADER
+   ======================================== */
+
+/* Modal header container */
+.add-exercise-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Modal title */
+.add-exercise-modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Close button */
+.add-exercise-modal-close-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease-in-out;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button hover effect */
+.add-exercise-modal-close-btn:hover {
+  background-color: var(--background-card-hover);
+  color: var(--text-primary);
+}
+
+/* ========================================
+   MODAL CONTENT
+   ======================================== */
+
+/* Modal content container */
+.add-exercise-modal-content {
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ========================================
+   MUSCLE GRID VIEW
+   ======================================== */
+
+/* Muscle grid container */
+.muscle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* Individual muscle grid item */
+.muscle-grid-item {
+  background-color: var(--background-card);
+  border: 2px solid black;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 120px;
+}
+
+/* Muscle grid item hover effect */
+.muscle-grid-item:hover {
+  border-color: var(--muscle-color);
+  background-color: var(--background-card-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Muscle grid item active state */
+.muscle-grid-item:active {
+  transform: translateY(0);
+}
+
+/* Muscle image container */
+.muscle-grid-image {
+  font-size: 2.5rem;
+  line-height: 1;
+  filter: grayscale(0.3);
+  transition: filter 0.2s ease-in-out;
+}
+
+/* Muscle grid item hover effect on image */
+.muscle-grid-item:hover .muscle-grid-image {
+  filter: grayscale(0);
+}
+
+/* Muscle name */
+.muscle-grid-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+/* ========================================
+   EXERCISE LIST VIEW
+   ======================================== */
+
+/* Exercise list view container */
+.exercise-list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Back button */
+.exercise-list-back-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: left;
+  transition: color 0.2s ease-in-out;
+  align-self: flex-start;
+}
+
+/* Back button hover effect */
+.exercise-list-back-btn:hover {
+  color: var(--primary-hover);
+}
+
+/* Exercise list header */
+.exercise-list-header {
+  margin-bottom: 0.5rem;
+}
+
+/* Exercise list title */
+.exercise-list-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Exercise list container */
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Individual exercise list item */
+.exercise-list-item {
+  background-color: var(--background-card);
+  border: 2px solid black;
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Exercise list item hover effect */
+.exercise-list-item:hover {
+  background-color: var(--background-card-hover);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: var(--primary-color);
+}
+
+/* Exercise list item active state */
+.exercise-list-item:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-md);
+}
+
+/* Exercise name - now directly styled on the button */
+.exercise-list-item-name {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* ========================================
+   MODAL FOOTER
+   ======================================== */
+
+/* Modal footer container */
+.add-exercise-modal-footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 1.5rem;
+}
+
+/* Cancel button */
+.add-exercise-cancel-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Cancel button hover effect */
+.add-exercise-cancel-btn:hover {
+  background-color: var(--background-card-hover);
+}
+
+/* Add button */
+.add-exercise-add-btn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Add button hover effect */
+.add-exercise-add-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Add button disabled state */
+.add-exercise-add-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .add-exercise-modal-overlay {
+    padding: 0;
+  }
+  
+  .add-exercise-modal {
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-exercise-modal-header {
+    padding: 1rem 1rem 0;
+    flex-shrink: 0;
+  }
+  
+  .add-exercise-modal-content {
+    padding: 0 1rem;
+    gap: 1rem;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  /* Muscle grid responsive */
+  .muscle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 1rem 0;
+  }
+  
+  .muscle-grid-item {
+    padding: 1rem 0.75rem;
+    min-height: 100px;
+  }
+  
+  .muscle-grid-image {
+    font-size: 2rem;
+  }
+  
+  .muscle-grid-name {
+    font-size: 0.8125rem;
+  }
+  
+  /* Exercise list responsive */
+  .exercise-list {
+    max-height: none;
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .exercise-list-item {
+    padding: 1rem 1.25rem;
+    min-height: 70px;
+  }
+  
+  .exercise-list-item-name {
+    font-size: 1rem;
+  }
+  
+  .add-exercise-modal-footer {
+    padding: 1rem;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .add-exercise-cancel-btn,
+  .add-exercise-add-btn {
+    flex: none;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .add-exercise-modal-header {
+    padding: 0.75rem 0.75rem 0;
+  }
+  
+  .add-exercise-modal-content {
+    padding: 0 0.75rem;
+  }
+  
+  /* Muscle grid for small screens */
+  .muscle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .muscle-grid-item {
+    padding: 0.75rem 0.5rem;
+    min-height: 90px;
+  }
+  
+  .muscle-grid-image {
+    font-size: 1.75rem;
+  }
+  
+  .muscle-grid-name {
+    font-size: 0.75rem;
+  }
+  
+  /* Exercise list for small screens */
+  .exercise-list-item {
+    padding: 0.875rem 1rem;
+    min-height: 60px;
+  }
+  
+  .exercise-list-item-name {
+    font-size: 0.9375rem;
+  }
+  
+  .add-exercise-modal-footer {
+    padding: 0.75rem;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus styles for keyboard navigation */
+.add-exercise-modal-close-btn:focus,
+.add-exercise-cancel-btn:focus,
+.add-exercise-add-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .add-exercise-modal {
+    border-width: 2px;
+  }
+  
+  .add-exercise-select {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .add-exercise-modal-close-btn,
+  .add-exercise-cancel-btn,
+  .add-exercise-add-btn,
+  .add-exercise-select {
+    transition: none;
+  }
+  
+  .add-exercise-add-btn:hover:not(:disabled) {
+    transform: none;
+  }
+}

@@ -1,0 +1,187 @@
+/* ========================================
+   DATE DISPLAY COMPONENT STYLES
+   ======================================== */
+
+/* Main component container */
+.date-display {
+  padding: 1rem 1rem 0;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+}
+
+/* ========================================
+   CURRENT DATE SECTION
+   ======================================== */
+
+/* Current date container */
+.date-current-section {
+  margin-bottom: 1rem;
+}
+
+/* Current day of week */
+.date-current-day {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+  font-weight: 400;
+}
+
+/* Current date display */
+.date-current-date {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+/* ========================================
+   WEEK VIEW SECTION
+   ======================================== */
+
+/* Week view container */
+.date-week-view {
+  margin-bottom: 1rem;
+}
+
+/* Date cards container */
+.date-cards-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+}
+
+/* Individual date card */
+.date-card {
+  min-width: 3rem;
+  height: 2.5rem;
+  background-color: var(--background-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.25rem;
+  flex-shrink: 0;
+}
+
+/* Active date card */
+.date-card.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+/* Day number in date card */
+.date-day {
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Weekday abbreviation in date card */
+.date-weekday {
+  font-size: 0.625rem;
+  opacity: 0.8;
+  line-height: 1;
+  margin-top: 0.125rem;
+}
+
+/* Large screens - bigger date cards */
+@media (min-width: 1024px) {
+  .date-card {
+    min-width: 3.5rem;
+    height: 3rem;
+    font-size: 0.875rem;
+  }
+  
+  .date-day {
+    font-size: 0.875rem;
+  }
+  
+  .date-weekday {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .date-card {
+    min-width: 4rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+  
+  .date-day {
+    font-size: 1rem;
+  }
+  
+  .date-weekday {
+    font-size: 0.8125rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .date-display {
+    padding: 0.75rem 0.75rem 0;
+  }
+  
+  .current-date {
+    font-size: 1.25rem;
+  }
+  
+  .date-card {
+    min-width: 2.75rem;
+    height: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .date-display {
+    padding: 0.5rem 0.5rem 0;
+  }
+  
+  .current-day {
+    font-size: 0.8125rem;
+  }
+  
+  .current-date {
+    font-size: 1.125rem;
+  }
+  
+  .date-cards-container {
+    gap: 0.375rem;
+  }
+  
+  .date-card {
+    min-width: 2.5rem;
+    height: 2rem;
+    font-size: 0.6875rem;
+  }
+  
+  .date-weekday {
+    font-size: 0.5625rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .date-card {
+    border-width: 2px;
+  }
+  
+  .date-card.active {
+    border-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .date-card {
+    transition: none;
+  }
+}

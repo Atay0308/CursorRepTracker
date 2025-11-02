@@ -1,0 +1,200 @@
+/* ========================================
+   EXERCISE CARD COMPONENT STYLES
+   ======================================== */
+
+/* Main exercise card container */
+.exercise-card {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+/* ========================================
+   EXERCISE HEADER
+   ======================================== */
+
+/* Exercise header container */
+.exercise-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Exercise name input field */
+.exercise-card-name-input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Exercise name input focus state */
+.exercise-card-name-input:focus {
+  outline: none;
+  border-bottom-color: var(--primary-color);
+}
+
+/* Exercise name input placeholder */
+.exercise-card-name-input::placeholder {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Exercise remove button */
+.exercise-card-remove-btn {
+  background: none;
+  border: none;
+  color: var(--error-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease-in-out;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Exercise remove button hover effect */
+.exercise-card-remove-btn:hover {
+  background-color: var(--error-color);
+  color: white;
+}
+
+/* ========================================
+   EXERCISE DETAILS
+   ======================================== */
+
+/* Exercise details container */
+.exercise-card-details {
+  margin-bottom: 1rem;
+}
+
+/* Muscle group display */
+.exercise-card-muscle-group {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Muscle group name */
+.exercise-card-muscle-group-name {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* ========================================
+   SETS CONTAINER
+   ======================================== */
+
+/* Sets container */
+.exercise-card-sets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Add set button */
+.exercise-card-add-set-btn {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: left;
+  transition: color 0.2s ease-in-out;
+  border-radius: var(--radius-sm);
+}
+
+/* Add set button hover effect */
+.exercise-card-add-set-btn:hover {
+  color: var(--primary-hover);
+  background-color: var(--background-card-hover);
+}
+
+/* ========================================
+   EXERCISE NOTES
+   ======================================== */
+
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .exercise-card {
+    padding: 0.75rem;
+  }
+  
+  .exercise-card-name-input {
+    font-size: 1rem;
+  }
+  
+  .exercise-card-sets-container {
+    gap: 0.75rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .exercise-card {
+    padding: 0.5rem;
+  }
+  
+  .exercise-card-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .exercise-card-details {
+    margin-bottom: 0.75rem;
+  }
+  
+  .exercise-card-sets-container {
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus styles for keyboard navigation */
+.exercise-card-name-input:focus,
+.exercise-card-menu-btn:focus,
+.exercise-card-add-set-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .exercise-card {
+    border-width: 2px;
+  }
+  
+  .exercise-card-name-input {
+    border-bottom-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .exercise-card-name-input,
+  .exercise-card-menu-btn,
+  .exercise-card-add-set-btn {
+    transition: none;
+  }
+}

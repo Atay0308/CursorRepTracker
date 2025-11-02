@@ -1,0 +1,205 @@
+/**
+ * StatsFilter Component Styles
+ * 
+ * Styling für die Statistik-Filter-Komponente mit Screenshot-konformer Anordnung:
+ * - Area Selection als Buttons oben
+ * - Linke Seite: Item und Metric Selection
+ * - Rechte Seite: Time Period Buttons und Group By Dropdown
+ */
+
+.stats-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: var(--background-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+}
+
+/* Area Selection - ganz oben als Buttons */
+.stats-filter-areas {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.stats-filter-area-btn {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+  position: relative;
+}
+
+.stats-filter-area-btn:hover {
+  color: var(--text-primary);
+}
+
+.stats-filter-area-btn.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.stats-filter-area-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Filter Panel - links und rechts aufgeteilt */
+.stats-filter-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.stats-filter-left,
+.stats-filter-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Filter Groups */
+.stats-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stats-filter-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.stats-filter-select {
+  padding: 0.75rem 1rem;
+  background-color: var(--background-dark);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+  min-width: 200px;
+}
+
+/* Kürzere Felder für Group By, Muscle Selection und Metric */
+.stats-filter-select[id="grouping-select"],
+.stats-filter-select[id="item-select"],
+.stats-filter-select[id="metric-select"] {
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.stats-filter-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.stats-filter-select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.stats-filter-select option {
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+}
+
+/* Time Period Buttons - wie im Screenshot */
+.stats-filter-period-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stats-filter-period-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--background-dark);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-width: 80px;
+}
+
+.stats-filter-period-btn:hover {
+  background-color: var(--background-card-hover);
+  color: var(--text-primary);
+}
+
+.stats-filter-period-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.stats-filter-period-btn.active:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-filter {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .stats-filter-panel {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .stats-filter-area-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .stats-filter-period-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .stats-filter-period-btn {
+    flex: 1;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-filter-areas {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .stats-filter-area-btn {
+    text-align: center;
+    border-bottom: none;
+    border-left: 2px solid transparent;
+  }
+  
+  .stats-filter-area-btn.active {
+    border-bottom-color: transparent;
+    border-left-color: var(--primary-color);
+  }
+  
+  .stats-filter-area-btn.active::after {
+    display: none;
+  }
+}

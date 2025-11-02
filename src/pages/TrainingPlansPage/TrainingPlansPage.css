@@ -1,0 +1,68 @@
+.training-plans-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 72px; /* space for bottom nav */
+}
+
+.training-plans-header {
+  padding: 16px;
+}
+
+.training-plans-subtitle {
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.training-plans-main {
+  padding: 0 16px 16px 16px;
+}
+
+.training-plans-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.training-plan-card {
+  background: var(--card-bg, #0f172a);
+  border: 1px solid var(--border-color, #1e293b);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.training-plan-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.training-plan-title {
+  margin: 0;
+  font-size: clamp(16px, 2.5vw, 18px);
+}
+
+.training-plan-description {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.training-plan-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+

@@ -1,0 +1,300 @@
+/* ========================================
+   WORKOUT PAGE STYLES
+   ======================================== */
+
+/* Unsaved Changes Indicator */
+.unsaved-indicator {
+  color: var(--warning-color);
+  font-weight: bold;
+  margin-left: var(--spacing-xs);
+  font-size: 1.2em;
+}
+
+/* Main workout page container */
+.workout-page {
+  min-height: 100vh;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
+  padding-bottom: 5rem; /* Space for bottom navigation */
+}
+
+/* Loading state for workout page */
+.workout-page.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Loading spinner for workout page */
+.workout-loading-spinner {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* ========================================
+   WORKOUT PAGE HEADER
+   ======================================== */
+
+/* Header container */
+.workout-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--background-dark);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Left side of header (back button + end button) */
+.workout-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Back button */
+.workout-back-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Back button hover effect */
+.workout-back-btn:hover {
+  background-color: var(--background-card);
+}
+
+/* End/Save button */
+.workout-end-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* End button hover effect */
+.workout-end-btn:hover:not(:disabled) {
+  background-color: var(--primary-color-dark);
+  transform: translateY(-1px);
+}
+
+/* End button disabled state */
+.workout-end-btn:disabled {
+  background-color: var(--text-secondary);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Workout date display in header */
+.workout-page-date {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Action buttons container */
+.workout-page-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Timer and menu buttons */
+.workout-timer-btn,
+.workout-menu-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Timer and menu buttons hover effect */
+.workout-timer-btn:hover,
+.workout-menu-btn:hover {
+  background-color: var(--background-card);
+}
+
+/* ========================================
+   WORKOUT DETAILS SECTION
+   ======================================== */
+
+/* Workout details container */
+.workout-details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-row .input-group {
+  flex: 1;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  border-radius: var(--radius-md);
+  color: white !important;
+  font-size: 0.875rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 0.1);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 3rem;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: white !important;
+}
+
+.textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* ========================================
+   EXERCISES SECTION
+   ======================================== */
+
+/* Exercises section container */
+.exercises-section {
+  padding: 1rem;
+  padding-bottom: 7rem; /* Space for save section */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Exercise cards are now handled by ExerciseCard component */
+
+/* Add Exercise Button */
+.add-exercise-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 25%;
+  align-self: center;
+}
+
+.add-exercise-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Error Message */
+.error-message {
+  background-color: var(--error-color);
+  color: white;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  margin: 1rem;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workout-header {
+    padding: 0.75rem;
+  }
+  
+  .workout-details {
+    padding: 0.75rem;
+  }
+  
+  .exercises-section {
+    padding: 0.75rem;
+  }
+  
+  .input-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .set-inputs {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .set-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .set-number {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .workout-header {
+    padding: 0.5rem;
+  }
+  
+  .workout-details {
+    padding: 0.5rem;
+  }
+  
+  .exercises-section {
+    padding: 0.5rem;
+  }
+  
+  .exercise-card {
+    padding: 0.75rem;
+  }
+  
+  .set-row {
+    padding: 0.5rem;
+  }
+}

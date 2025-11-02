@@ -1,0 +1,289 @@
+/* ========================================
+   SET ROW COMPONENT STYLES
+   ======================================== */
+
+/* Main set row container */
+.set-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--primary-color);
+  color: white;
+}
+
+/* ========================================
+   SET NUMBER
+   ======================================== */
+
+/* Set number indicator */
+.set-row-number {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+/* ========================================
+   SET INPUTS
+   ======================================== */
+
+/* Set inputs container */
+.set-row-inputs {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+
+}
+
+/* Individual input group */
+.set-row-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Weight and Reps input groups - smaller for numbers */
+.set-row-input-group.weight,
+.set-row-input-group.reps {
+  flex: 0.3;
+}
+
+/* Notes input group - larger for text */
+.set-row-input-group.notes {
+  flex: 1;
+}
+
+
+/* Input label */
+.set-row-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Input field */
+.set-row-input {
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
+  color: white;
+  font-size: 0.8125rem;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Input focus state */
+.set-row-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgb(59 130 246 / 0.1);
+}
+
+/* Input placeholder */
+.set-row-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========================================
+   TIMER SECTION
+   ======================================== */
+
+/* Timer container */
+.set-row-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+  min-width: 4rem;
+}
+
+/* Timer display */
+.set-row-timer-display {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-family: 'Courier New', monospace;
+  background-color: var(--background-card);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+}
+
+/* Timer display button - clickable timer display */
+.set-row-timer-display-btn {
+  background-color: var(--background-card);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  min-width: 4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Courier New', monospace;
+}
+
+/* Timer display button hover effect */
+.set-row-timer-display-btn:hover {
+  border-color: var(--primary-color);
+  background-color: var(--background-card-hover);
+  color: var(--primary-color);
+}
+
+/* Timer display button active state */
+.set-row-timer-display-btn:active {
+  transform: scale(0.98);
+}
+
+/* Timer reset button */
+.set-row-timer-reset-btn {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease-in-out;
+  min-width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Timer reset button hover effect */
+.set-row-timer-reset-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--background-card-hover);
+}
+
+/* ========================================
+   REMOVE BUTTON
+   ======================================== */
+
+/* Remove set button */
+.set-row-remove-btn {
+  background: none;
+  border: none;
+  color: var(--error-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  transition: background-color 0.2s ease-in-out;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove button hover effect */
+.set-row-remove-btn:hover {
+  background-color: var(--background-card);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .set-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  
+  .set-row-inputs {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .set-row-timer {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .set-row-number {
+    align-self: center;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .set-row {
+    padding: 0.5rem;
+  }
+  
+  .set-row-inputs {
+    gap: 0.5rem;
+  }
+  
+  .set-row-input-group {
+    gap: 0.125rem;
+  }
+  
+  .set-row-label {
+    font-size: 0.6875rem;
+  }
+  
+  .set-row-input {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus styles for keyboard navigation */
+.set-row-input:focus,
+.set-row-timer-btn:focus,
+.set-row-remove-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .set-row {
+    border-width: 2px;
+  }
+  
+  .set-row-input {
+    border-width: 2px;
+  }
+  
+  .set-row-timer-display {
+    border-width: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .set-row-input,
+  .set-row-timer-btn,
+  .set-row-remove-btn {
+    transition: none;
+  }
+}

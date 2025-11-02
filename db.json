@@ -1,0 +1,1012 @@
+{
+  "workouts": [
+    {
+      "id": "1",
+      "name": "Oberkörper",
+      "date": "2025-09-25",
+      "startTime": "22:00",
+      "endTime": "23:00",
+      "exercises": [
+        {
+          "id": "1",
+          "name": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": [
+            {
+              "id": "1",
+              "setNumber": 1,
+              "weight": 80,
+              "reps": 10,
+              "breakTime": 90,
+              "notes": ""
+            },
+            {
+              "id": "2",
+              "setNumber": 2,
+              "weight": 85,
+              "reps": 8,
+              "breakTime": 120,
+              "notes": ""
+            },
+            {
+              "id": "3",
+              "setNumber": 3,
+              "weight": 90,
+              "reps": 6,
+              "breakTime": 150,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "2",
+          "name": "Bizeps Curls",
+          "muscleGroup": "Bizeps",
+          "sets": [
+            {
+              "id": "4",
+              "setNumber": 1,
+              "weight": 20,
+              "reps": 12,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "5",
+              "setNumber": 2,
+              "weight": 22.5,
+              "reps": 10,
+              "breakTime": 75,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": false
+    },
+    {
+      "id": "2",
+      "name": "Unterkörper",
+      "date": "2025-09-24",
+      "startTime": "19:30",
+      "endTime": "20:30",
+      "exercises": [
+        {
+          "id": "3",
+          "name": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "6",
+              "setNumber": 1,
+              "weight": 60,
+              "reps": 15,
+              "breakTime": 120,
+              "notes": ""
+            },
+            {
+              "id": "7",
+              "setNumber": 2,
+              "weight": 70,
+              "reps": 12,
+              "breakTime": 150,
+              "notes": ""
+            },
+            {
+              "id": "8",
+              "setNumber": 3,
+              "weight": 80,
+              "reps": 10,
+              "breakTime": 180,
+              "notes": ""
+            },
+            {
+              "id": "9",
+              "setNumber": 4,
+              "weight": 85,
+              "reps": 8,
+              "breakTime": 200,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "4",
+          "name": "Deadlift",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "10",
+              "setNumber": 1,
+              "weight": 100,
+              "reps": 8,
+              "breakTime": 180,
+              "notes": ""
+            },
+            {
+              "id": "11",
+              "setNumber": 2,
+              "weight": 110,
+              "reps": 6,
+              "breakTime": 200,
+              "notes": ""
+            },
+            {
+              "id": "12",
+              "setNumber": 3,
+              "weight": 120,
+              "reps": 5,
+              "breakTime": 240,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "5",
+          "name": "Beinstrecker",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "13",
+              "setNumber": 1,
+              "weight": 30,
+              "reps": 15,
+              "breakTime": 90,
+              "notes": ""
+            },
+            {
+              "id": "14",
+              "setNumber": 2,
+              "weight": 35,
+              "reps": 12,
+              "breakTime": 90,
+              "notes": ""
+            },
+            {
+              "id": "15",
+              "setNumber": 3,
+              "weight": 40,
+              "reps": 10,
+              "breakTime": 120,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "6",
+          "name": "Situps",
+          "muscleGroup": "Bauch",
+          "sets": [
+            {
+              "id": "16",
+              "setNumber": 1,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "17",
+              "setNumber": 2,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "18",
+              "setNumber": 3,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "19",
+              "setNumber": 4,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": false
+    },
+    {
+      "id": "3",
+      "name": "Unterkörper",
+      "date": "2025-09-23",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "exercises": [
+        {
+          "id": "7",
+          "name": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "20",
+              "setNumber": 1,
+              "weight": 55,
+              "reps": 15,
+              "breakTime": 120,
+              "notes": ""
+            },
+            {
+              "id": "21",
+              "setNumber": 2,
+              "weight": 65,
+              "reps": 12,
+              "breakTime": 150,
+              "notes": ""
+            },
+            {
+              "id": "22",
+              "setNumber": 3,
+              "weight": 75,
+              "reps": 10,
+              "breakTime": 180,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "8",
+          "name": "Deadlift",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "23",
+              "setNumber": 1,
+              "weight": 95,
+              "reps": 8,
+              "breakTime": 180,
+              "notes": ""
+            },
+            {
+              "id": "24",
+              "setNumber": 2,
+              "weight": 105,
+              "reps": 6,
+              "breakTime": 200,
+              "notes": ""
+            },
+            {
+              "id": "25",
+              "setNumber": 3,
+              "weight": 115,
+              "reps": 5,
+              "breakTime": 240,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "9",
+          "name": "Beinstrecker",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "26",
+              "setNumber": 1,
+              "weight": 25,
+              "reps": 15,
+              "breakTime": 90,
+              "notes": ""
+            },
+            {
+              "id": "27",
+              "setNumber": 2,
+              "weight": 30,
+              "reps": 12,
+              "breakTime": 90,
+              "notes": ""
+            },
+            {
+              "id": "28",
+              "setNumber": 3,
+              "weight": 35,
+              "reps": 10,
+              "breakTime": 120,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "10",
+          "name": "Situps",
+          "muscleGroup": "Bauch",
+          "sets": [
+            {
+              "id": "29",
+              "setNumber": 1,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "30",
+              "setNumber": 2,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "31",
+              "setNumber": 3,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            },
+            {
+              "id": "32",
+              "setNumber": 4,
+              "weight": 0,
+              "reps": 20,
+              "breakTime": 60,
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": false
+    },
+    {
+      "id": "mgv2wt7a2hay77d8bvp",
+      "name": "Brust",
+      "date": "2025-10-17",
+      "startTime": "18:44",
+      "endTime": "",
+      "exercises": [
+        {
+          "id": "mgv2wwbgyyzx3qrcoc",
+          "name": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": [
+            {
+              "id": "mgv2wwbgw6x6yhwdljb",
+              "setNumber": 1,
+              "weight": 80,
+              "reps": 10,
+              "breakTime": ""
+            },
+            {
+              "id": "mgv4x7frugjqs60orog",
+              "setNumber": 2,
+              "weight": 100,
+              "reps": 6,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgv4xcflbqpphzfma1b",
+              "setNumber": 3,
+              "weight": 110,
+              "reps": 4,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mgvhqux2nezcczpelwc",
+          "name": "Trizeps Dips",
+          "muscleGroup": "Trizeps",
+          "sets": [
+            {
+              "id": "mgvhqux2un7g12yc3y8",
+              "setNumber": 1,
+              "weight": 22,
+              "reps": 12,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhqw152k4jo509a68",
+              "setNumber": 2,
+              "weight": 25,
+              "reps": 11,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    },
+    {
+      "id": "mgv5t4401ed48uw616x",
+      "name": "Beine",
+      "date": "2025-10-17",
+      "startTime": "20:05",
+      "endTime": "",
+      "exercises": [
+        {
+          "id": "mgv5tda5j6s8urp0bvk",
+          "name": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "mgv5tda5x3v1gnae17i",
+              "setNumber": 1,
+              "weight": 120,
+              "reps": 6,
+              "breakTime": ""
+            },
+            {
+              "id": "mgv5tiyb7521t7k7kf2",
+              "setNumber": 2,
+              "weight": 140,
+              "reps": 4,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgv5tjs2yaxmkkeujrl",
+              "setNumber": 3,
+              "weight": 140,
+              "reps": 4,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mgv5tvmcl9dju89kx2",
+          "name": "Deadlift",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "mgv5tvmcseeblpt2pze",
+              "setNumber": 1,
+              "weight": 140,
+              "reps": 5,
+              "breakTime": ""
+            },
+            {
+              "id": "mgv5u09ljo45n00dw3",
+              "setNumber": 2,
+              "weight": 140,
+              "reps": 5,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgv5u3d1om9n9nt845n",
+              "setNumber": 3,
+              "weight": 140,
+              "reps": 5,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    },
+    {
+      "id": "mgvhkierdyygq8g0hq5",
+      "name": "Unterkörper",
+      "date": "2025-10-17",
+      "startTime": "01:34",
+      "endTime": "",
+      "exercises": [
+        {
+          "id": "mgvhkegh8s5cs7lzq5y",
+          "name": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "mgvhkeghxgdlxabp0yo",
+              "setNumber": 1,
+              "weight": 50,
+              "reps": 15,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhklx9j3pq0y615yq",
+              "setNumber": 2,
+              "weight": 100,
+              "reps": 12,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgvhkshhcsgvmnfgm2",
+              "setNumber": 3,
+              "weight": 180,
+              "reps": 6,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mgvhl14gxr18a9oase",
+          "name": "Beinstrecker",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "mgvhl14gt9n91fw8i5i",
+              "setNumber": 1,
+              "weight": 35,
+              "reps": 12,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhl2bxln1v9ql541p",
+              "setNumber": 2,
+              "weight": 40,
+              "reps": 12,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgvhl2w5gsgne8vmd1w",
+              "setNumber": 3,
+              "weight": 45,
+              "reps": 11,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    },
+    {
+      "id": "mgvhod8xziz66wwrla9",
+      "name": "Upperbody",
+      "date": "2025-10-18",
+      "startTime": "01:37",
+      "endTime": "",
+      "exercises": [
+        {
+          "id": "mgvhohj6fd69ei442la",
+          "name": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": [
+            {
+              "id": "mgvhohj6tc68hm8lmp8",
+              "setNumber": 1,
+              "weight": 100,
+              "reps": 10,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhom8t8o0jkxp1ufo",
+              "setNumber": 2,
+              "weight": 110,
+              "reps": 8,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgvhoq524a3ffoilg19",
+              "setNumber": 3,
+              "weight": 120,
+              "reps": 5,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mgvhoz3t3nv3ztbfv3h",
+          "name": "Schrägbankdrücken",
+          "muscleGroup": "Brust",
+          "sets": [
+            {
+              "id": "mgvhoz3t51bcv50qzgh",
+              "setNumber": 1,
+              "weight": 80,
+              "reps": 10,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhp0e22k01l1d7rm9",
+              "setNumber": 2,
+              "weight": 90,
+              "reps": 7,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgvhp0vc376w4811pez",
+              "setNumber": 3,
+              "weight": 95,
+              "reps": 6,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mgvhphxy3rrlvlsrb9b",
+          "name": "Schulterdrücken",
+          "muscleGroup": "Schultern",
+          "sets": [
+            {
+              "id": "mgvhphxyve6hdq5xphd",
+              "setNumber": 1,
+              "weight": 35,
+              "reps": 8,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhpn3j3snkiy6712j",
+              "setNumber": 2,
+              "weight": 38,
+              "reps": 6,
+              "breakTime": "",
+              "notes": ""
+            },
+            {
+              "id": "mgvhpvnh4aoho6t2yfu",
+              "setNumber": 3,
+              "weight": 38,
+              "reps": 5,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    },
+    {
+      "id": "mgvhufzepetyp8sh1ym",
+      "name": "Beine",
+      "date": "2025-10-18",
+      "startTime": "01:42",
+      "endTime": "01:42",
+      "exercises": [
+        {
+          "id": "mgvhukxekpc3fy9qmp",
+          "name": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": [
+            {
+              "id": "mgvhukxeiufqm7t1dr",
+              "setNumber": 1,
+              "weight": 160,
+              "reps": 5,
+              "breakTime": ""
+            },
+            {
+              "id": "mgvhumg8w5q399tckg",
+              "setNumber": 2,
+              "weight": 160,
+              "reps": 4,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    },
+    {
+      "id": "mgzk0mkonipvygniqu9",
+      "name": "Unterkörper",
+      "date": "2025-10-20",
+      "startTime": "21:54",
+      "endTime": "22:21",
+      "exercises": [
+        {
+          "id": "mgzk0om9hdwibi7jlao",
+          "name": "Klimmzüge",
+          "muscleGroup": "Rücken",
+          "sets": [
+            {
+              "id": "mgzk0om9q8mx2ylsmd",
+              "setNumber": 1,
+              "weight": 70,
+              "reps": 10,
+              "breakTime": ""
+            },
+            {
+              "id": "mgzkyjr6puwsxexnjt8",
+              "setNumber": 2,
+              "weight": 70,
+              "reps": 10,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mgzkyt5eo9jpo4oc9mm",
+          "name": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": [
+            {
+              "id": "mgzkyt5ehkiwv05b4n",
+              "setNumber": 1,
+              "weight": 80,
+              "reps": 10,
+              "breakTime": ""
+            },
+            {
+              "id": "mgzkyzfzjobkn85j38",
+              "setNumber": 2,
+              "weight": 90,
+              "reps": 6,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    },
+    {
+      "id": "mhchnrwtt5c3chb56md",
+      "name": "Ganzkörper",
+      "date": "2025-10-29",
+      "startTime": "21:45",
+      "endTime": "22:11",
+      "exercises": [
+        {
+          "id": "mhchnliy0uoz9sgch4o",
+          "name": "Trizeps Dips",
+          "muscleGroup": "Trizeps",
+          "sets": [
+            {
+              "id": "mhchnliyd0z7vi5kvo9",
+              "setNumber": 1,
+              "weight": 70,
+              "reps": 10,
+              "breakTime": ""
+            },
+            {
+              "id": "mhchnrwfgzl4mak6ya5",
+              "setNumber": 2,
+              "weight": 75,
+              "reps": 8,
+              "breakTime": "",
+              "notes": ""
+            }
+          ],
+          "notes": ""
+        },
+        {
+          "id": "mhcho1zxx6iuhcf46g",
+          "name": "Schulterdrücken",
+          "muscleGroup": "Schultern",
+          "sets": [
+            {
+              "id": "mhcho1zx4m2j5ilical",
+              "setNumber": 1,
+              "weight": 40,
+              "reps": 6,
+              "breakTime": ""
+            }
+          ],
+          "notes": ""
+        }
+      ],
+      "notes": "",
+      "isActive": true
+    }
+  ],
+  "trainingPlans": [
+    {
+      "id": "1",
+      "name": "Oberkörper",
+      "description": "Grundlegendes Oberkörper-Training",
+      "exercises": [
+        {
+          "exerciseName": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": 3,
+          "reps": 10,
+          "weight": 80
+        },
+        {
+          "exerciseName": "Bizeps Curls",
+          "muscleGroup": "Bizeps",
+          "sets": 3,
+          "reps": 12,
+          "weight": 20
+        },
+        {
+          "exerciseName": "Trizeps Dips",
+          "muscleGroup": "Trizeps",
+          "sets": 3,
+          "reps": 10,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Unterkörper",
+      "description": "Grundlegendes Unterkörper-Training",
+      "exercises": [
+        {
+          "exerciseName": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": 4,
+          "reps": 12,
+          "weight": 60
+        },
+        {
+          "exerciseName": "Deadlift",
+          "muscleGroup": "Beine",
+          "sets": 3,
+          "reps": 8,
+          "weight": 100
+        },
+        {
+          "exerciseName": "Beinstrecker",
+          "muscleGroup": "Beine",
+          "sets": 3,
+          "reps": 15,
+          "weight": 30
+        },
+        {
+          "exerciseName": "Situps",
+          "muscleGroup": "Bauch",
+          "sets": 4,
+          "reps": 20,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Ganzkörper",
+      "description": "Vollständiges Ganzkörper-Training",
+      "exercises": [
+        {
+          "exerciseName": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": 3,
+          "reps": 10,
+          "weight": 70
+        },
+        {
+          "exerciseName": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": 3,
+          "reps": 12,
+          "weight": 50
+        },
+        {
+          "exerciseName": "Rudern",
+          "muscleGroup": "Rücken",
+          "sets": 3,
+          "reps": 10,
+          "weight": 60
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Push",
+      "description": "Push-Training für Brust, Schultern und Trizeps",
+      "exercises": [
+        {
+          "exerciseName": "Bankdrücken",
+          "muscleGroup": "Brust",
+          "sets": 4,
+          "reps": 8,
+          "weight": 85
+        },
+        {
+          "exerciseName": "Schulterdrücken",
+          "muscleGroup": "Schultern",
+          "sets": 3,
+          "reps": 10,
+          "weight": 40
+        },
+        {
+          "exerciseName": "Trizeps Dips",
+          "muscleGroup": "Trizeps",
+          "sets": 3,
+          "reps": 12,
+          "weight": 0
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Pull",
+      "description": "Pull-Training für Rücken und Bizeps",
+      "exercises": [
+        {
+          "exerciseName": "Lat Pulldown",
+          "muscleGroup": "Rücken",
+          "sets": 4,
+          "reps": 10,
+          "weight": 70
+        },
+        {
+          "exerciseName": "Rudern",
+          "muscleGroup": "Rücken",
+          "sets": 3,
+          "reps": 12,
+          "weight": 65
+        },
+        {
+          "exerciseName": "Bizeps Curls",
+          "muscleGroup": "Bizeps",
+          "sets": 3,
+          "reps": 15,
+          "weight": 22.5
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Beine",
+      "description": "Spezifisches Beintraining",
+      "exercises": [
+        {
+          "exerciseName": "Kniebeuge",
+          "muscleGroup": "Beine",
+          "sets": 5,
+          "reps": 10,
+          "weight": 70
+        },
+        {
+          "exerciseName": "Deadlift",
+          "muscleGroup": "Beine",
+          "sets": 4,
+          "reps": 6,
+          "weight": 110
+        },
+        {
+          "exerciseName": "Beinpresse",
+          "muscleGroup": "Beine",
+          "sets": 3,
+          "reps": 15,
+          "weight": 120
+        },
+        {
+          "exerciseName": "Beinbeugemaschine",
+          "muscleGroup": "Beine",
+          "sets": 3,
+          "reps": 12,
+          "weight": 45
+        }
+      ]
+    }
+  ]
+}

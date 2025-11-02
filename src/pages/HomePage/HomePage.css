@@ -1,0 +1,208 @@
+/* ========================================
+   HOME PAGE STYLES
+   ======================================== */
+
+/* Main page container */
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================
+   MAIN CONTENT AREA
+   ======================================== */
+
+/* Main content wrapper */
+.home-main {
+  flex: 1;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ========================================
+   RECENT WORKOUTS SECTION
+   ======================================== */
+
+/* Recent workouts container */
+.home-recent-workouts-section {
+  margin-bottom: 2rem;
+}
+
+/* Section title */
+.home-recent-workouts-title {
+  font-size: rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+/* Horizontal scrollable workout cards container */
+.home-workout-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Workout card wrapper (contains date + card) */
+.home-workout-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Date above workout cards */
+.home-workout-card-date {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Mobile: Stack cards vertically */
+@media (max-width: 560px) {
+  .home-workout-cards {
+    flex-direction: column;
+    overflow-x: visible;
+    align-items: stretch;
+  }
+  
+  .home-workout-card-wrapper {
+    align-items: stretch;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 900px) and (min-width: 561px) {
+  .home-header {
+    padding: 0.75rem 0.75rem 0;
+  }
+  
+  .home-main {
+    padding: 0 0.75rem;
+    gap: 1.5rem;
+  }
+  
+  .start-workout-section {
+    padding: 1.5rem 0;
+  }
+  
+  .start-workout-title {
+    font-size: 1.25rem;
+  }
+  
+  .start-workout-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .plus-icon {
+    font-size: 1.75rem;
+  }
+
+  .home-workout-card {
+    width: clamp(150px, 30vw, 250px);  /* Etwas schmaler */
+    padding: 0.875rem; 
+  }
+
+  .home-workout-title {
+    font-size: 2rem;
+  }
+
+  .home-workout-card-title {
+    font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+  }
+
+  .home-exercise-item {
+    font-size: clamp(0.65rem, 1.8vw, 0.8rem);
+  }
+  
+  .recent-workouts-title {
+    font-size: 1.125rem;
+  }
+  
+}
+
+
+/* Mobile: Unter 560px - Vertikal stapeln */
+@media (max-width: 560px) {
+  .home-workout-cards {
+    flex-direction: column;      /* Vertikal stapeln */
+    overflow-x: visible;         /* Kein horizontaler Scroll */
+    align-items: stretch;       /* Volle Breite */
+  }
+  
+  .home-workout-card {
+    min-width: auto;            /* Keine Mindestbreite */
+    width: 100%;                /* Volle Breite */
+    flex-shrink: 1;             /* Kann schrumpfen */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    padding: 0.5rem 0.5rem 0;
+  }
+  
+  .home-main {
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+  
+  .current-date {
+    font-size: 1.25rem;
+  }
+  
+  .date-navigation {
+    gap: 0.375rem;
+  }
+  
+  .date-card {
+    min-width: 2.5rem;
+    height: 2rem;
+    font-size: 0.6875rem;
+  }
+  
+  .start-workout-section {
+    padding: 1rem 0;
+  }
+  
+  .start-workout-title {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  
+  .start-workout-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .plus-icon {
+    font-size: 1.5rem;
+  }
+  
+  .recent-workouts-title {
+    font-size: 1rem;
+  }
+  
+  .workout-card {
+    padding: 0.75rem;
+  }
+  
+  .workout-title {
+    font-size: 0.875rem;
+  }
+  
+  .exercise-item {
+    font-size: 0.8125rem;
+  }
+}

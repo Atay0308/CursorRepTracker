@@ -1,0 +1,294 @@
+/* ========================================
+   START WORKOUT COMPONENT STYLES
+   ======================================== */
+
+/* Main component container */
+.start-workout {
+  text-align: center;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* ========================================
+   TITLE SECTION
+   ======================================== */
+
+/* Component title */
+.start-workout-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* ========================================
+   WORKOUT INFO SECTION
+   ======================================== */
+
+/* Workout info container */
+.start-workout-info {
+  background: var(--background-card);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-bottom: var(--spacing-sm);
+  
+}
+
+/* Workout name */
+.start-workout-workout-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+/* Workout date */
+.start-workout-workout-date {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+/* Exercise count */
+.start-workout-exercise-count {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ========================================
+   BUTTON SECTION
+   ======================================== */
+
+/* Main start workout button */
+.start-workout-btn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Button hover effect */
+.start-workout-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button focus state */
+.start-workout-btn:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
+}
+
+/* Button active state */
+.start-workout-btn:active {
+  transform: scale(0.95);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Button disabled state */
+.start-workout-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Button loading state */
+.start-workout-btn.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Button continue state */
+.start-workout-btn.continue {
+  background-color: transparent;
+  color: var(--success-color);
+}
+
+.start-workout-btn.continue:hover:not(:disabled) {
+  background-color: var(--success-color);
+  color: white;
+}
+
+/* ========================================
+   ICON SECTION
+   ======================================== */
+
+/* Plus icon inside button */
+.start-workout-plus-icon {
+  font-size: 2rem;
+  color: white;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Icon color for continue button */
+.start-workout-btn.continue .start-workout-plus-icon {
+  color: var(--success-color);
+}
+
+.start-workout-btn.continue:hover .start-workout-plus-icon {
+  color: white;
+}
+
+/* Plus icon animation during loading */
+.start-workout-btn.loading .start-workout-plus-icon {
+  animation: spin 1s linear infinite;
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Screen reader only text */
+.start-workout-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .start-workout {
+    padding: 1.5rem 0;
+    gap: 1.25rem;
+  }
+  
+  .start-workout-title {
+    font-size: 1.25rem;
+  }
+  
+  .start-workout-btn {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .plus-icon {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-workout {
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  
+  .start-workout-title {
+    font-size: 1.125rem;
+  }
+  
+  .start-workout-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .plus-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .start-workout {
+    padding: 2.5rem 0;
+    gap: 2rem;
+  }
+  
+  .start-workout-title {
+    font-size: 1.75rem;
+  }
+  
+  .start-workout-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  
+  .plus-icon {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .start-workout-title {
+    font-size: 2rem;
+  }
+  
+  .start-workout-btn {
+    width: 5rem;
+    height: 5rem;
+  }
+  
+  .plus-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .start-workout-btn {
+    border: 2px solid white;
+  }
+  
+  .start-workout-btn:focus {
+    outline-width: 3px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .start-workout-btn {
+    transition: none;
+  }
+  
+  .start-workout-btn:hover:not(:disabled) {
+    transform: none;
+  }
+  
+  .start-workout-btn.loading {
+    animation: none;
+  }
+  
+  .start-workout-btn.loading .plus-icon {
+    animation: none;
+  }
+}
