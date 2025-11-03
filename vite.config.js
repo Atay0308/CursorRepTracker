@@ -24,6 +24,12 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/test/setup.js'],
+    coverage: {
+      provider: 'v8',                // nutzt @vitest/coverage-v8
+      reporter: ['text', 'lcov'],    // erzeugt lcov.info für SonarCloud
+      reportsDirectory: './coverage', // Zielordner für Coverage-Dateien
+      clean: true
+    },
   },
   build: {
     rollupOptions: {

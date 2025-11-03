@@ -90,12 +90,12 @@ describe('StatisticsPage', () => {
     renderStatisticsPage();
     
     await waitFor(() => {
-      expect(screen.getByText('GENERAL')).toBeInTheDocument();
-      expect(screen.getByText('MUSCLES')).toBeInTheDocument();
-      expect(screen.getByText('EXERCISES')).toBeInTheDocument();
-      expect(screen.getByLabelText('Choose Metric')).toBeInTheDocument();
-      expect(screen.getByText('Time Period')).toBeInTheDocument();
-      expect(screen.getByText('Group By')).toBeInTheDocument();
+      expect(screen.getByText('ALLGEMEIN')).toBeInTheDocument();
+      expect(screen.getByText('MUSKELN')).toBeInTheDocument();
+      expect(screen.getByText('ÜBUNGEN')).toBeInTheDocument();
+      expect(screen.getByLabelText('Metrik wählen')).toBeInTheDocument();
+      expect(screen.getByText('Zeitraum')).toBeInTheDocument();
+      expect(screen.getByText('Gruppieren nach')).toBeInTheDocument();
     });
   });
 
